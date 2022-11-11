@@ -40,8 +40,6 @@ public class BatchUsecases {
 					batch.setBatchStartDate(batchStartDate);
 					batch.setDuration(duration);
 					
-//					BatchDao bdo = new BatchDaoImpl();
-					
 					try {
 						String result = bdo.createBatch(batch);
 						System.out.println(result);
@@ -56,10 +54,8 @@ public class BatchUsecases {
 					System.out.println("Enter CourseId");
 					int courseId = sc.nextInt();
 					
-//					BatchDao bdo = new BatchDaoImpl();
-					
 					try {
-						String result = bdo.updateCourse(numOfStud, courseId);
+						String result = bdo.updateBatch(numOfStud, courseId);
 						System.out.println(result);
 					} catch (BatchException e) {
 						System.out.println(e.getMessage());

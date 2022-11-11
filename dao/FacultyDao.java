@@ -7,8 +7,8 @@ import com.cms.model.Faculty;
 
 public interface FacultyDao {
 	
-	public String createBatch(Faculty faculty) throws FacultyException;
-	public String updateCourse(Faculty faculty) throws FacultyException;
-	public List<Faculty> viewBatch() throws FacultyException;
+	public String createFaculty(Faculty faculty) throws FacultyException;
+	public String updateFaculty(String password, String userName) throws FacultyException;
+	public List<Faculty> viewFaculty() throws FacultyException;
 
 }
