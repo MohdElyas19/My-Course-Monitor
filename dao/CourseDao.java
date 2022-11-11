@@ -9,7 +9,7 @@ public interface CourseDao {
 	
 	public String createCourse(Course course) throws CourseException;
 	
-	public String updateCourse(Course course) throws CourseException;
+	public String updateCourse(int courseFee, String courseName) throws CourseException;
 	
 	public List<Course> viewCourse() throws CourseException;
 

@@ -7,8 +7,8 @@ import com.cms.model.CoursePlan;
 
 public interface CoursePlanDao {
 	
-	public String createBatch(CoursePlan coursePlan) throws CoursePlanException;
-	public String updateCourse(CoursePlan coursePlan) throws CoursePlanException;
-	public List<CoursePlan> viewBatch() throws CoursePlanException;
+	public String createCoursePlan(CoursePlan coursePlan) throws CoursePlanException;
+	public String updateCoursePlan(String topic, String status) throws CoursePlanException;
+	public List<CoursePlan> viewCoursePlan() throws CoursePlanException;
 
 }

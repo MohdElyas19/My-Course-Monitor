@@ -42,7 +42,7 @@ public class BatchDaoImpl implements BatchDao {
 	}
 
 	@Override
-	public String updateCourse(int numberOfStudents, int courseId) throws BatchException {
+	public String updateBatch(int numberOfStudents, int courseId) throws BatchException {
 		String result = "Batch Not Updated";
 		
 		try(Connection conn = DbUtil.provideConnection()) {
